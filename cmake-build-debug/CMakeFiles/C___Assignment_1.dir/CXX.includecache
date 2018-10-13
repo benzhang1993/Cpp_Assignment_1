@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/benzh/CLionProjects/C++_Assignment_1/Connectivitymatrix.cpp
+Connectivitymatrix.hpp
+/cygdrive/c/Users/benzh/CLionProjects/C++_Assignment_1/Connectivitymatrix.hpp
+iostream
+-
+iomanip
+-
+
+/cygdrive/c/Users/benzh/CLionProjects/C++_Assignment_1/Connectivitymatrix.hpp
+Matrix.hpp
+/cygdrive/c/Users/benzh/CLionProjects/C++_Assignment_1/Matrix.hpp
+
+/cygdrive/c/Users/benzh/CLionProjects/C++_Assignment_1/Matrix.cpp
+Matrix.hpp
+/cygdrive/c/Users/benzh/CLionProjects/C++_Assignment_1/Matrix.hpp
+cmath
+-
+iostream
+-
+
+/cygdrive/c/Users/benzh/CLionProjects/C++_Assignment_1/Matrix.hpp
+vector
+-
+iosfwd
+-
+
+/cygdrive/c/Users/benzh/CLionProjects/C++_Assignment_1/main.cpp
+iostream
+-
+Matrix.hpp
+/cygdrive/c/Users/benzh/CLionProjects/C++_Assignment_1/Matrix.hpp
+Connectivitymatrix.hpp
+/cygdrive/c/Users/benzh/CLionProjects/C++_Assignment_1/Connectivitymatrix.hpp
+fstream
+-
+
