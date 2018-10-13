@@ -8,6 +8,9 @@
 #include <vector>
 #include <iosfwd>
 
+/**
+ * A matrix that contains rows and columns
+ */
 class Matrix {
 
     protected:

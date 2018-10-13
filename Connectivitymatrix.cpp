@@ -2,11 +2,13 @@
 // Created by benzh on 2018-10-11.
 //
 
-#include "ConnectivityMatrix.hpp"
+#include "Connectivitymatrix.hpp"
 #include <iostream>
 #include <iomanip>
 
-
+/**
+ * Runs the google page rank algorithms
+ */
 void ConnectivityMatrix::runAlgorithm() {
     getImportanceMatrix();
     getStochasticMatrix();
@@ -15,6 +17,9 @@ void ConnectivityMatrix::runAlgorithm() {
     printResult();
 };
 
+/**
+ * Calculates the importance matrix by dividing each col by col total
+ */
 void ConnectivityMatrix::getImportanceMatrix() {
     for(int j = 0; j < matrix[0].size(); j++) {
         double rowTotal = 0;
@@ -29,6 +34,9 @@ void ConnectivityMatrix::getImportanceMatrix() {
     }
 };
 
+/**
+ * Calculates stochastic matrix by setting 0 cols to 1/n
+ */
 void ConnectivityMatrix::getStochasticMatrix() {
     for(int j = 0; j < matrix[0].size(); j++) {
         double rowTotal = 0;
@@ -43,6 +51,9 @@ void ConnectivityMatrix::getStochasticMatrix() {
     }
 }
 
+/**
+ * Applies random walk by multiplying non 0 cols by 0.85 and 0 cols by 0.15
+ */
 void ConnectivityMatrix::applyRandomWalk() {
     /**
      * Why can I call this without declaring it in header?
@@ -63,6 +74,9 @@ void ConnectivityMatrix::applyRandomWalk() {
     this->Matrix::operator+=(transitionMatrix);
 }
 
+/**
+ * Applies the Markov Process
+ */
 void ConnectivityMatrix::markovProcess() {
     /**
      * Initialize Rank Matrix
@@ -100,6 +114,9 @@ void ConnectivityMatrix::markovProcess() {
     this->matrix = newRankMatrix.getMatrix();
 }
 
+/**
+ * Prints the results in percentage with 2 decimal places
+ */
 void ConnectivityMatrix::printResult() {
     int ascii = 65;
     for(int i = 0; i < matrix.size(); i++) {

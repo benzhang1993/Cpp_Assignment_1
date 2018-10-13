@@ -7,6 +7,9 @@
 
 #include "Matrix.hpp"
 
+/**
+ * A matrix class with functions to calculate the google page rank algorithm
+ */
 class ConnectivityMatrix : public Matrix{
 
     public:
