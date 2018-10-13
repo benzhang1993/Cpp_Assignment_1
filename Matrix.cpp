@@ -2,7 +2,7 @@
 // Created by benzh on 2018-10-05.
 //
 
-#include "matrix.hpp"
+#include "Matrix.hpp"
 #include <cmath>
 #include <iostream>
 

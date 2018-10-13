@@ -9,7 +9,9 @@
 #include <iosfwd>
 
 class Matrix {
-    std::vector<std::vector<double>> matrix;
+
+    protected:
+        std::vector<std::vector<double>> matrix;
 
     public:
         Matrix();

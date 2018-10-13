@@ -3,4 +3,4 @@ project(C___Assignment_1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(C___Assignment_1 main.cpp matrix.cpp matrix.hpp)
+add_executable(C___Assignment_1 main.cpp Matrix.cpp Matrix.hpp ConnectivityMatrix.cpp ConnectivityMatrix.hpp)
