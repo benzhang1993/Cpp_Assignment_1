@@ -224,6 +224,10 @@
         return *this;
     }
 
+    std::vector<std::vector<double>> Matrix::getMatrix() {
+        return matrix;
+    }
+
 
 
 

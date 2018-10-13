@@ -39,6 +39,7 @@ class Matrix {
         Matrix& operator+=(const Matrix& rhs);
         Matrix& operator-=(const Matrix& rhs);
         Matrix& operator*=(const Matrix& rhs);
+        std::vector<std::vector<double>> getMatrix();
 };
 
 

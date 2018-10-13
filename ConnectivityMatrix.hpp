@@ -14,13 +14,14 @@ class ConnectivityMatrix : public Matrix{
         constexpr static double randomWalkChance = 1 - followChance;
         ConnectivityMatrix():Matrix(){};
         ConnectivityMatrix(std::vector<double> a):Matrix(a){};
+        ConnectivityMatrix(int i, int j):Matrix(i, j) {};
 
         void runAlgorithm();
         void getImportanceMatrix();
         void getStochasticMatrix();
         void applyRandomWalk();
         void markovProcess();
-
+        void printResult();
 };
 
 
